@@ -7,11 +7,11 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'dpg-ckib7mq12bvs73feem10-a'),
+        host: env('DATABASE_HOST', 'ep-bitter-moon-65497826-pooler.ap-southeast-1.postgres.vercel-storage.com'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'mydb_r7v5'),
-        user: env('DATABASE_USERNAME', 'mydb_r7v5_user'),
-        password: env('DATABASE_PASSWORD', '67xEDnbWg26oFIUl0zuobJafZtqjC2Ar'),
+        database: env('DATABASE_NAME', 'verceldb'),
+        user: env('DATABASE_USERNAME', 'default'),
+        password: env('DATABASE_PASSWORD', 'c3JdqjinYlR8'),
         ssl: env.bool('DATABASE_SSL', true) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
